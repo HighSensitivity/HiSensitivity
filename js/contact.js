@@ -18,7 +18,7 @@ $("form").submit(function(event) {
   };
 
   // Fetch the existing contacts from GitHub
-  $.getJSON("https://api.github.com/repos/<your_username>/<your_repository>/contents/contacts.json", function(data) {
+  $.getJSON("https://api.github.com/repos/HighSensitivity/HighSensitivity/contents/contacts.json", function(data) {
     // Decode the content of contacts.json
     var contacts = JSON.parse(atob(data.content));
 
@@ -31,10 +31,10 @@ $("form").submit(function(event) {
 
     // Make a PUT request to update the contacts.json file on GitHub
     $.ajax({
-      url: "https://api.github.com/repos/<your_username>/<your_repository>/contents/contacts.json",
+      url: "https://api.github.com/repos/HighSensitivity/HighSensitivity/contents/contacts.json",
       type: "PUT",
       headers: {
-        "Authorization": "Bearer <your_personal_access_token>"
+        "Authorization": "Bearer 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"
       },
       data: JSON.stringify({
         "message": "Updated contacts.json",
