@@ -1,0 +1,16 @@
+[
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "1234567890",
+    "comment": "This is a sample comment",
+    "area": "North Side"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "janesmith@example.com",
+    "phone": "9876543210",
+    "comment": "Another sample comment",
+    "area": "South Side"
+  }
+]
